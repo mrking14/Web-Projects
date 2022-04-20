@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		.container{
+	text-align: center;
+}
+table{
+	margin: auto;
+}
+input{
+	font-size: 30px;
+	border: 3px solid black;
+	height: 58px;
+	border-radius: 15px;
+	margin: 12px;
+
+
+}
+button{
+	font-size: 55px;
+	background-image:linear-gradient(#F3DF04,#07B4E4);
+	width: 90px;
+	border-radius: 25px;
+
+}
+h1{
+	font-size:60px;
+}
+.Calculator{
+	border-radius:12px;
+	background-image:linear-gradient( #781111,#151773);
+	border: 3px solid  black; 
+	border-padding :10px;
+	display: inline-block;
+	
+
+
+}
+footer{
+	text-align: center;
+	font-size:20px;
+	margin: 40px;
+	font-style:italic;
+
+}
+body{
+	background-image:linear-gradient(#EE38EB,#2A8CBA);
+}
+
+	</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<h1> <b>Calculator</b></h1>
+
+		<div class="Calculator">
+		<input type="text" name="output" id="screen">
+		
+		<table>
+			<tr>
+				<td><button>(</button></td>
+				<td><button>)</button></td>
+				<td><button>C</button></td>
+				<td><button>/</button></td>
+			</tr>
+			<tr>
+				<td><button>7</button></td>
+				<td><button>8</button></td>
+				<td><button>9</button></td>
+				<td><button>X</button></td>
+			</tr>
+			<tr>
+				<td><button>4</button></td>
+				<td><button>5</button></td>
+				<td><button>6</button></td>
+				<td><button>-</button></td>
+			</tr>
+			<tr>
+				<td><button>1</button></td>
+				<td><button>2</button></td>
+				<td><button>3</button></td>
+				<td><button>+</button></td>
+			</tr>
+			<tr>
+				<td><button>.</button></td>
+				<td><button>0</button></td>
+				<td><button>%</button></td>
+				<td><button>=</button></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		let screen = document.getElementById('screen');
+buttons = document.querySelectorAll('button');
+let screenValue = '';
+for (item of buttons) {
+    item.addEventListener('click', (e) => {
+        buttonText = e.target.innerText;
+        console.log('Button text is ', buttonText);
+        if (buttonText == 'X') {
+            buttonText = '*';
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+        else if (buttonText == 'C') {
+            screenValue = "";
+            screen.value = screenValue;
+        }
+        else if (buttonText == '=') {
+            screen.value = eval(screenValue);
+        }
+        else {
+            screenValue += buttonText;
+            screen.value = screenValue;
+        }
+
+    })
+}
+		
+
+	</script>
+
+
+
+	<footer> <b>Designed By Masoom Raza</b></footer>
+
+	
+
+</body>
+</html>
