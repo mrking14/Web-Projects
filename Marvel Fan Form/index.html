@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel's Fan Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="style.css" as="style" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="bottom"></div>
+    <main id="main" class="flex">
+        <header id="header" class="flex">
+            <h1 id="title">Marvel's Fan Form</h1>
+            <p id="description">A form that every marvel fan should Fill. </p>
+        </header>
+        <form id="survey-form">
+            <fieldset>
+                <div class="form-group flex">
+                    <label for="name" id="name-label">Your  Name</label>
+                    <input type="text" placeholder=" Marvel's Fan - Enter your  Name" id="name" name="name" class="large-input" required autofocus>
+                </div>
+                <div class="form-group flex">
+                    <label for="email" id="email-label">Your Email</label>
+                    <input type="email" placeholder=" Marvel`s Fan - Enter your  Email" id="email" name="email" class="large-input" required>
+                </div>
+                <div class="form-group flex">
+                    <label for="age" id="number-label">Your Age <span>(optional)</span></label>
+                    <input type="number" placeholder=" Marvel`s Fan - Enter your  Age" min="10" max="99" id="number" name="age" class="large-input">
+                </div>
+                <div class="form-group flex">
+                    <label for="describe">Which option describes you as a fan</label>
+                    <select name="describe" id="dropdown" class="large-input" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="huge">The biggest fan</option>
+                        <option value="medium">A good fan</option>
+                        <option value="well">Sometimes I watch a Marverl`s movie</option>
+                        <option value="not">I don't even know what I'm doing here</option>
+                    </select>
+                </div>
+                <div class="form-group flex">
+                    <label>Would you recommend Marvel's movies or comics to a friend?</label>
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="definitely"
+                          type="radio"
+                          class="input-radio"
+                        />Definitely</label
+                      >
+                      <label>
+                        <input
+                          name="user-recommend"
+                          value="maybe"
+                          type="radio"
+                          class="input-radio"
+                        />Maybe</label
+                      >
+                
+                      <label
+                        ><input
+                          name="user-recommend"
+                          value="not-sure"
+                          type="radio"
+                          class="input-radio"
+                        />Not sure</label
+                      >
+                </div>
+                <div class="form-group flex">
+                    <label>
+                        Which character would you like to see more comics about?
+                      <span>(Check all that apply)</span>
+                    </label>
+              
+                    <label
+                      ><input
+                        name="prefer"
+                        value="spider-man"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Spider-man</label
+                    >
+                    <label>
+                      <input
+                        name="prefer"
+                        value="wolverine"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Wolverine</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="captain-america"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Captain-America</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="hulk"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Hulk</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="black-widow"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Black widow</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="iron-man"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Iron-man</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="thor"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Thor</label
+                    >
+                    <label
+                      ><input
+                        name="prefer"
+                        value="quicksilver"
+                        type="checkbox"
+                        class="input-checkbox"
+                      />Quicksilver</label
+                    >
+                  </div>
+                <div class="form-group flex">
+                    <label for="message">Tell us why are you a big fan <span>(optional)</span></label>
+                    <textarea name="message" class="large-input textarea" placeholder="Tell us here... :)" required></textarea>
+                </div>
+                <input type="submit" value="Submit!" id="submit">
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

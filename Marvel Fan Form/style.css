@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Bitter&family=Oranienbaum&family=Poppins:wght@200&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+  }
+body{
+  font-size: 16px;
+  color: #FFF;
+}
+.flex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+#main{
+    justify-content: flex-start;
+}
+#bottom{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+#header{
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(255, 0, 0, 0.539);
+    text-align: center;
+    margin-bottom: 10rem;
+}
+#title{
+    letter-spacing: .5rem;
+}
+#survey-form{
+    min-width: 60%;
+    padding: 5rem 8rem;
+    background-color: rgba(255, 0, 0, 0.539);
+    border-radius: 1rem;
+}
+fieldset{
+    border: none;
+}
+.form-group{
+    align-items:flex-start;
+}
+.form-group:not(:first-child){
+    margin-top: 5rem;
+}
+.form-group label{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.large-input{
+    width: 100%;
+    padding: 1.3rem 2rem;
+    border: none;
+    border-radius: .3rem;
+    font-size: 2rem;
+}
+.textarea{
+    height: 15rem;
+}
+#submit{
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    background-color: rgba(31, 30, 30, 0.756);
+    margin-top: 5rem;
+    border: none;
+    font-size: 3rem;
+    font-family: 'Alegreya SC', serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+#submit:hover{
+    background-color: rgba(27, 53, 146, 0.772);
+}
+.input-radio{
+    margin-right: 1rem;
+}
